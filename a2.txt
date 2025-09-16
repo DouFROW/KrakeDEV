@@ -1,1 +1,3 @@
 Soy el archivo a2
+
+Ready para ir a staged
