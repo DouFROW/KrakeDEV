@@ -6,6 +6,7 @@ saludar = function(){
     let mensajeBienvenida = "Hola "+nombre+" "+apellido+", tu edad es "+edad+", y tu estatura "+estatura
 
     mostrarTexto("lblResultado",mensajeBienvenida);
+    mostrarImagen("lblImagen","img/saluda.gif")
 }
 
 recuperarTexto = function(idComponente) {
@@ -29,5 +30,10 @@ recuperarFloat = function(idComponente){
 mostrarTexto = function(idComponente,mensaje){
     let valorCaja = document.getElementById(idComponente);
     valorCaja.innerText = mensaje;
+}
+
+mostrarImagen = function(idComponente,rutaImagen){
+    let valorCaja = document.getElementById(idComponente)
+    valorCaja.src = rutaImagen;
 }
 
