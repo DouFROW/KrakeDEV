@@ -6,7 +6,9 @@ saludar = function(){
     let mensajeBienvenida = "Hola "+nombre+" "+apellido+", tu edad es "+edad+", y tu estatura "+estatura
 
     mostrarTexto("lblResultado",mensajeBienvenida);
-    mostrarImagen("lblImagen","img/saluda.gif")
+    mostrarImagen("lblImagen","img/saluda.gif") //para referenciar algun componente no es necesario poner ./ para especificar el directorio actual ya que el programa lo asume por si solo.
+    
+    mostrarTextoEnCaja("txtNombre","");
 }
 
 recuperarTexto = function(idComponente) {
@@ -35,5 +37,11 @@ mostrarTexto = function(idComponente,mensaje){
 mostrarImagen = function(idComponente,rutaImagen){
     let valorCaja = document.getElementById(idComponente)
     valorCaja.src = rutaImagen;
+}
+
+//Limpiar la caja de texto
+mostrarTextoEnCaja = function(idComponente,mensaje){
+    let valorCaja = document.getElementById(idComponente);
+    valorCaja.value = mensaje;
 }
 
