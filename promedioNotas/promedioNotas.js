@@ -6,4 +6,9 @@ calcularPromedioNotas = function(){
     let promTotal = promedio.toFixed(2);
     
     mostrarTexto("lblResultado",promTotal);
+    if(promTotal>7){
+        mostrarImagen("imagen","exito.gif");
+    }else{
+        mostrarImagen("imagen","fracaso.gif");
+    }
 }
