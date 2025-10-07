@@ -6,9 +6,17 @@ calcularPromedioNotas = function(){
     let promTotal = promedio.toFixed(2);
     
     mostrarTexto("lblResultado",promTotal);
-    if(promTotal>7){
-        mostrarImagen("imagen","exito.gif");
-    }else{
+    if(promTotal>0 && promTotal<5){
+        mostrarTexto("lblTexto","REPROBADO");
         mostrarImagen("imagen","fracaso.gif");
+    }else if(promTotal>=5 && promTotal<=8){
+        mostrarTexto("lblTexto","BUEN TRABAJO");
+        mostrarImagen("imagen","goodjob.gif");
+    }else if(promTotal>8 && promTotal<=10){
+        mostrarTexto("lblTexto","EXCELENTE");
+        mostrarImagen("imagen","excelente.gif");
+    }else{
+        mostrarTexto("lblTexto","DATOS INCORRECTOS");
+        mostrarImagen("imagen","error.gif");
     }
 }
