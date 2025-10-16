@@ -104,7 +104,7 @@ calcular = function () {
 }
 
 esNotaValida = function (nota, idComponenteError) {
-    let hayErrores;
+    let hayErrores=false;
 
     if (isNaN(nota)) {
         mostrarTexto(idComponenteError, "Debe ingresar un numero");
