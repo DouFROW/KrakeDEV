@@ -145,7 +145,7 @@ validarClave = function(clave){
 
 esMayuscula = function(caracter){
     let vlCaracter = recuperarTexto(caracter);
-    let vlASCII = vlCaracter.charCodeAt(0);
+    let vlASCII = vlCaracter.charCodeAt();
 
     if(vlASCII>=65 && vlASCII<=90){
         return true;
