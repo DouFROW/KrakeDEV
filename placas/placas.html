@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACAS</title>
+    <script src="placas.js"></script>
+    <script src="servicioPlacas.js"></script>
+    <script src="utilitarios.js"></script>
+    <script src="utilitariosCadenas.js"></script>
+    <link rel="stylesheet" href="placas.css">
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-errores">
+            <div class="txtDatos">
+                ERRORES
+            </div>
+            <div id="listErrores"></div>
+        </div>
+
+        <div class="container-placa">
+            <div id="Titulo">
+                PLACA VEHICULAR
+            </div>
+
+            <div class="datosPlaca">
+                <div id="txtPlaca">Ingrese el numero de placa:</div>
+                <div><input type="text" id="lblPlaca"></div>
+            </div>
+
+            <div class="ErrorPlaca">
+                <div id="lblTituloError"></div>
+                <div id="lblErrorPlaca"></div>
+            </div>
+
+            <div class="container-button">
+                <div><input type="button" class="button" value="VALIDAR PLACA" onclick="validarPlaca()"></div>
+                <div><input type="button" class="button" value="LIMPIAR" onclick="limpiar()"></div>
+            </div>
+
+            <div id="lblValidacion"></div>
+        </div>
+
+        <div class="container-datos">
+            <div class="container-provincia">
+                <div class="txtDatos">
+                    Provincia:
+                </div>
+                <div id="lblProvincia" class="txtDatos"></div>
+            </div>
+            <div class="container-tipo">
+                <div class="txtDatos">
+                    Tipo de Vehiculo:
+                </div>
+                <div id="lblTipoVehiculo" class="txtDatos"></div>
+            </div>
+            <div class="container-picoPlaca">
+                <div class="txtDatos">
+                    Dia Pico y Placa:
+                </div>
+                <div id="lblPicoPlaca" class="txtDatos"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

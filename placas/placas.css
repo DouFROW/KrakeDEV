@@ -1,0 +1,114 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}   
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #fa709a, #fee140, #30cfd0, #330867);
+    background-size: 400% 400%;
+    animation: nombreVariable 10s ease-in infinite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container-placa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 11vw;
+    padding-right: 10vw;
+}
+
+@keyframes nombreVariable {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container div {
+    margin: 6px;
+}
+
+#Titulo {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.datosPlaca {
+    display: flex;
+    font-size: 21px;
+}
+
+.container-button {
+    display: flex;
+}
+
+.button {
+    font-size: 20px;
+    width: 170px;
+}
+
+.ErrorPlaca {
+    text-align: center;
+    font-size: 19px;
+    color: red;
+}
+
+#lblValidacion {
+    color: navy;
+    font-weight: bold;
+}
+
+.txtDatos {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.container-errores{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-500px);  
+}
+
+#listErrores{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 19px;
+    color: red;
+}
+
+.container-datos{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(500px); 
+}
+
+.container-provincia, .container-tipo, .container-picoPlaca{
+    display: flex;
+    flex-direction: row;
+}
+
+
