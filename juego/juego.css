@@ -1,0 +1,81 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+.container-juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-resultado{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+#lblImagenGenerada{
+    object-fit: contain;
+    min-width: 250px;      
+    min-height: 300px;     
+    display: block;        
+}
+
+.container-eleccion img {
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.container-eleccion img:hover {
+    transform: scale(1.1);
+}
+
+#lblResultado{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    min-height: 40px;
+}
+
+#Titulo{
+    font-size: 45px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-puntos{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+#Puntos{
+    font-size: 30px;
+}
+
+.lblPuntos{
+    display: flex;
+    font-size: 22px;
+    margin: 10px;
+}
+
