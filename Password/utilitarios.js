@@ -33,7 +33,7 @@ recuperarFloat = function(idComponente){
     let valorCaja= recuperarTexto(idComponente);
     let valorFlotante = parseFloat(valorCaja);
     return valorFlotante;
- }
+}
 
 validarMayuscula = function (caracter) {
     let ValorASCII = caracter.charCodeAt();
@@ -53,3 +53,19 @@ validarMayuscula = function (caracter) {
 
     return ValidacionMayus;
 }
+
+validarDigito = function (digito) {
+    let valorDigito = digito.charCodeAt();
+    let ValidacionDigito;
+
+    if (valorDigito >= 48 && valorDigito <= 57) {
+        ValidacionDigito = true;
+    }
+    if (valorDigito < 48 || valorDigito > 57) {
+        ValidacionDigito = false;
+    }
+    return ValidacionDigito;
+
+}
+
+
