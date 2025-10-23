@@ -3,6 +3,7 @@ let palabraSecreta;
 
 guardarPalabra = function () {
     let caracteres = recuperarTexto("txtSecreta");
+    let letra = recuperarTexto("txtLetra");
 
     if (caracteres.length < 5 || caracteres.length > 5) {
         alert("Debe ingresar 5 caracteres.");
@@ -15,11 +16,42 @@ guardarPalabra = function () {
             }
         }
         palabraSecreta = caracteres;
+        mostrarTextoEnCaja("txtSecreta","");
         console.log(palabraSecreta);
     }
 
+    mostrarLetra(letra,)
+
 }
 
+mostrarLetra = function(letra,posicion){
+    if(posicion==0){
+        mostrarTexto("div0",letra);
+    }
+    if(posicion==1){
+        mostrarTexto("div1",letra);
+    }
+    if(posicion==2){
+        mostrarTexto("div2",letra);
+    }
+    if(posicion==3){
+        mostrarTexto("div3",letra);
+    }
+    if(posicion==4){
+        mostrarTexto("div4",letra);
+    }
+}
+
+validar = function(letra){
+    let letrasEncontradas;
+    for(let posicion=0; posicion<palabraSecreta.length; posicion++){
+        let vlCaracter = palabraSecreta.charAt(posicion);
+        if(vlCaracter == letra){
+            mostrarLetra(letra,posicion);
+            letrasEncontradas++;
+        }
+    }
+}
 
 esMayuscula = function (caracter) {
     let caracterASCII = caracter.charCodeAt();
