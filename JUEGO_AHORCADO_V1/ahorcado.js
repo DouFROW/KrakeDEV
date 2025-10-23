@@ -19,9 +19,6 @@ guardarPalabra = function () {
         mostrarTextoEnCaja("txtSecreta","");
         console.log(palabraSecreta);
     }
-
-    mostrarLetra(letra,)
-
 }
 
 mostrarLetra = function(letra,posicion){
