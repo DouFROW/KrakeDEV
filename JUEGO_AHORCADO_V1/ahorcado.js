@@ -3,7 +3,6 @@ let palabraSecreta;
 
 guardarPalabra = function () {
     let caracteres = recuperarTexto("txtSecreta");
-    let letra = recuperarTexto("txtLetra");
 
     if (caracteres.length < 5 || caracteres.length > 5) {
         alert("Debe ingresar 5 caracteres.");
@@ -19,6 +18,16 @@ guardarPalabra = function () {
         mostrarTextoEnCaja("txtSecreta","");
         console.log(palabraSecreta);
     }
+}
+
+ingresarLetra = function(){
+    let letra = recuperarTexto("txtLetra");
+    if(!esMayuscula(letra)){
+        return alert("Todos los caracteres deben ser mayusculas.");
+    }else{
+        validar(letra);
+    }
+
 }
 
 mostrarLetra = function(letra,posicion){
@@ -40,7 +49,7 @@ mostrarLetra = function(letra,posicion){
 }
 
 validar = function(letra){
-    let letrasEncontradas;
+    let letrasEncontradas=0;
     for(let posicion=0; posicion<palabraSecreta.length; posicion++){
         let vlCaracter = palabraSecreta.charAt(posicion);
         if(vlCaracter == letra){
