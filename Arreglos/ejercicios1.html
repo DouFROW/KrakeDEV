@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="ejercicios1.js"></script>
     <script src="utilitarios.js"></script>
 </head>
+
 <body>
     <input type="text" id="txtNota">
     <input type="button" value="AGREGAR NOTA" onclick="probarAgregar()">
@@ -17,5 +19,34 @@
     <input type="button" value="LIMPIAR" onclick="limpiar()">
     <h3 id="lblSumaNotas"></h3>
     <h3 id="lblPromedio"></h3>
+
+    <table>
+        <tr>
+            <th>CABECERA </th>
+            <th>CABECERA </th>
+            <th>CABECERA </th>
+        </tr>
+        <tr>
+            <td>celda1</td>
+            <td>celda2</td>
+            <td>celda3</td>
+        </tr>
+        <tr>
+            <td>celda4</td>
+            <td>celda5</td>
+            <td>celda6</td>
+        </tr>
+        <tr>
+            <td>celda7</td>
+            <td>celda8</td>
+            <td>celda9</td>
+        </tr>
+    </table>
+    <input type="button" value="GENERAR TABLA" onclick="generarTabla()">
+    <input type="button" value="MOSTRAR NOTAS" onclick="mostrarNotas()">
+    <div id="divTabla">
+
+    </div>
 </body>
+
 </html>
