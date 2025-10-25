@@ -51,35 +51,22 @@ habilitarComponente = function(idComponente){
     document.getElementById(idComponente).disabled = false;
 }
 
-validarMayuscula = function (caracter) {
-    let ValorASCII = caracter.charCodeAt();
-    let ValidacionMayus;
-
-    if (ValorASCII >= 65 && ValorASCII <= 90) {
-        ValidacionMayus = true;
-    }
-
-    if (ValorASCII < 65 || ValorASCII > 90) {
-        ValidacionMayus = false;
-    }
-
-    if (ValorASCII == 209 || ValorASCII == 193 || ValorASCII == 201 || ValorASCII == 205 || ValorASCII == 211 || ValorASCII == 218) {
-        return null;
-    }
-
-    return ValidacionMayus;
+recuperarTextoDiv=function(idComponente){
+    let componente;
+    let valorRecuperado;
+    componente=document.getElementById(idComponente);
+    valorRecuperado=componente.textContent; 
+    return valorRecuperado;
 }
 
-validarDigito = function (digito) {
-    let valorDigito = digito.charCodeAt();
-    let ValidacionDigito;
+recuperarFloatDiv = function(idComponente){
+    let valorDiv= recuperarTextoDiv(idComponente);
+    let valorFlotante = parseFloat(valorDiv);
+    return valorFlotante;
+}
 
-    if (valorDigito >= 48 && valorDigito <= 57) {
-        ValidacionDigito = true;
-    }
-    if (valorDigito < 48 || valorDigito > 57) {
-        ValidacionDigito = false;
-    }
-    return ValidacionDigito;
-
+recuperarIntDiv = function(idComponente){
+    let valorDiv= recuperarTextoDiv(idComponente);
+    let valorEntero = parseInt(valorDiv);
+    return valorEntero;
 }
