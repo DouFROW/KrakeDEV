@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVALUACION INDIVIDUAL</title>
+    <script src="orden.js"></script>
+    <script src="utilitarios.js"></script>
+    <link rel="stylesheet" href="orden.css">
+</head>
+
+<body onload="mostrarPersona()">
+    <div class="container">
+        <div class="ingreseDatos">
+            <h3>Ingrese su nombre:</h3>
+            <input type="text" id="txtTexto">
+            <div id="lblErrorNombre"></div>
+
+            <h3>Ingrese su edad:</h3>
+            <input type="text" id="txtEdad">
+            <div id="lblErrorEdad"></div>
+        </div>
+        <div id="lblMayor">
+
+        </div>
+        <div id="lblMenor">
+
+        </div>
+        <div id="containerButton">
+            <div>
+                <input type="button" value="ENCONTRAR MENOR" class="button" onclick="determinarMenor()">
+            </div>
+            <div>
+                <input type="button" value="GUARDAR" class="button" onclick="agregarPersona()">
+            </div>
+            <div>
+                <input type="button" value="ENCONTRAR MAYOR" class="button" onclick="determinarMayor()">
+            </div>
+        </div>
+        
+
+        <div id="tablaPersonas">
+
+        </div>
+    </div>
+</body>
+
+</html>
